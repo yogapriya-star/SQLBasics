@@ -1,0 +1,106 @@
+DATA are 3 types they are:
+  *Structured Data
+  *Un-Structured Data
+  *Semi-Structured Data
+
+Structured Data => Data is defined in a structured.
+    => [Text, Number, Date]
+
+Un-Structured Data => information that either does not have a pre-defined data model or is not organized in a pre-defined manner.
+    => [Digital photos, audio, and video files]
+
+Semi-Structured Data => Semi-structured data is typically characterized by the use of metadata or tags that provide additional information about the data elements.
+    => [XML , JSON, E-mails and Web pages]  
+
+There are 4 types of database
+    => Hierarchical Database
+    => Relational Database
+    => Non-Relational Database
+    => Object oriented database
+  
+Relational Database Management System/ SQL Databases 
+    => It is a type of database that stores and provides access to data points that are related to one another.
+    => SQL => Standard Query Language designed for Relational Database.
+  Types of Relational Models
+    => The One-to-Many Model
+    => The One-to-One Model
+    => The Many-to-Many Model
+    => The Many-to-One Model
+
+Relational databases need ACID characteristics. ACID refers to four essential properties: 
+    - Atomicity 
+    - Consistency 
+    - Isolation
+    - Durability
+
+Example of RDBMS 
+    IBM, Oracle, MySQL, Microsoft SQLServer and PostgreSQL.
+
+  
+Non-Relational Database Management System/ NoSQL Databases 
+    => It is a database that does not use the tabular schema of rows and columns found in most traditional database systems.
+    => NoSQL => Not Only Standard Query Language designed for Non-Relational Database.
+  
+There are four different types of NoSQL databases.
+    => Document-oriented database
+    => Key-Value Stores
+    => Wide-Column Stores
+    => Graph Stores
+
+Example of RDBMS 
+    MongoDB, Redis.
+
+Relational Database Management System using Structured Query Language (SQL) with MYSQL
+    Install MYSQL Workbench
+    Open MYSQL Workbench
+
+SQL Commands
+    SQL commands are instructions. It is used to communicate with the database. It is also used to perform specific tasks, functions, and queries of data.
+    There are five types of SQL commands: 
+        => DDL
+        => DML
+        => DCL
+        => TCL
+        => DQL
+
+Data Definition Language (DDL)
+      - CREATE
+      - ALTER
+      - DROP
+      - TRUNCATE
+  
+Data Manipulation Language (DML)
+      - INSERT
+      - UPDATE
+      - DELETE
+  
+Data Control Language (DCL)
+      - Grant
+      - Revoke
+
+Transaction Control Language (TCL)
+      - COMMIT
+      - ROLLBACK
+      - SAVEPOINT
+
+Data Query Language (DQL)
+      - SELECT
+
+SQL Operator 
+  => SQL Arithmetic Operators  [+, -, *, /, %]
+  => SQL Comparison Operators  [=, !=, <>, >, <, >=, <=, !<, !>]
+  => SQL Logical Operators     [ALL, AND, ANY, BETWEEN, IN, NOT, OR, EXISTS, LIKE]
+
+DBMS Architecture 
+    => 1-Tier Architecture - In this architecture, the database is directly available to the user. It means the user can directly sit on the DBMS and uses it.
+    => 2-Tier Architecture - The 2-Tier architecture is same as basic client-server. In the two-tier architecture, applications on the client end can directly communicate with the database at the server side. For this interaction, API's like: ODBC, JDBC are used.
+    => 3-Tier Architecture - The 3-Tier architecture contains another layer between the client and server. In this architecture, client can't directly communicate with the server.
+
+Types of keys:
+    1. Primary key
+    2. Candidate key
+    3. Super Key
+    4. Foreign key
+    5. Alternate key
+    6. Composite key
+    7. Artificial key
