@@ -18,7 +18,8 @@ create table student(
     student_id int,
     name varchar(100),
     age int,
-    department varchar(100)
+    department varchar(100),
+    student_mark int
  )   
 ```
 
@@ -51,12 +52,12 @@ truncate table student
 
 To insert the data in table
 ```bash
-insert into student values(1,"John",25,"CSE")
+insert into student values(1,"John",25,"CSE",90)
 ```
 
 To insert multiple row in table
 ```bash
-insert into student values(2,"Praveen",45,"ECE"),(3,"Suresh",34,"EEE");
+insert into student values(2,"Praveen",45,"ECE",85),(3,"Suresh",34,"EEE",88);
 ```
 
 To update the column in table
@@ -115,3 +116,45 @@ To print the data where the student IDs who are greater than 2 from table
 ```bash
 select * from student where student_id>2
 ```
+
+**Aggregate Function**
+SUM()
+
+SUM() of stundent_mark from student table
+```bash
+select sum(student_mark) from student 
+```
+
+SUM() of stundent_mark from student table by giving the alice name for the column
+```bash
+select sum(student_mark) as total_mark from student 
+```
+
+MAX()
+
+MAX() of stundent_mark from student table
+```bash
+select max(student_mark) as maximum_mark from student 
+```
+
+MIN()
+
+MIN() of stundent_mark from student table
+```bash
+select min(student_mark) as minimum_mark from student 
+```
+
+AVG()
+
+AVG() of stundent_mark from student table
+```bash
+select avg(student_mark) as average_mark from student 
+```
+
+COUNT()
+
+COUNT() of stundent_mark from student table where department="EEE"
+```bash
+select count(student_mark) as student_count_mark from student where department="EEE"
+```
+
