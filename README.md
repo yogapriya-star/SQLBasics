@@ -158,3 +158,22 @@ COUNT() of stundent_mark from student table where department="EEE"
 select count(student_mark) as student_count_mark from student where department="EEE"
 ```
 
+**Order By**
+
+order by specific column in to descending order in student table 
+```bash
+select name,student_mark from student order by student_mark desc
+```
+
+order by specific column in to acsending order in student table 
+```bash
+select name,student_mark from student order by student_mark asc
+```
+
+**Group By**
+
+group by specific column add aggregate function for the specific column in student table 
+```bash
+select avg(student_mark) as average_mark,department from student group by department
+```
+
