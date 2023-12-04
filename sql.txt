@@ -104,3 +104,10 @@ Types of keys:
     5. Alternate key
     6. Composite key
     7. Artificial key
+
+Aggregate Functions:
+    1. SUM()
+    2. MAX()
+    3. MIN()
+    4. AVG()
+    5. COUNT()
