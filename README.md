@@ -170,6 +170,16 @@ order by specific column in to acsending order in student table
 select name,student_mark from student order by student_mark asc
 ```
 
+list all students in alphabetical order by name in student table 
+```bash
+select * from student order by name asc
+```
+
+list all students in the EEE department and sort them by mark in descending order in student table 
+```bash
+select * from student where student_mark<500 order by department desc
+```
+
 **Group By**
 
 Select specific column and use group by with aggregate function in student table 
@@ -182,22 +192,32 @@ group by specific column add aggregate function in student table
 select avg(student_mark) as average_mark,department from student group by department
 ```
 
+find the total number of students in each department in student table 
+```bash
+select count(*) as department_count, department from student group by department_count
+```
+
+**Group By** **Order By**
+
 group by specific column add aggregate function with order by in student table 
 ```bash
 select count(student_mark) as student_count, department from student group by department order by student_count desc
 ```
 
-list all students in alphabetical order by name in student table 
+calculate the average mark for each department and sorted in ascending order by department name in student table 
 ```bash
-select * from student order by name asc
+select avg(student_mark) as avg_student_mark, department from student group by department order by department asc
 ```
 
-list all students in the EEE department and sort them by mark in descending order in student table 
+find the department with the highest average salary in student table 
 ```bash
-select * from student where student_mark<500 order by department desc
+select avg(student_mark) as avg_student_mark, department from student group by department order by avg_student_mark desc limit 1
 ```
 
-find the total number of students in each department in student table 
+find the department with the lowest average salary in student table 
 ```bash
-select count(*) as department_count, department from student group by department_count
+select avg(student_mark) as avg_student_mark, department from student group by department order by avg_student_mark asc limit 1
 ```
+
+**Having Clause**
+
