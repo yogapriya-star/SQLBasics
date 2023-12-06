@@ -172,8 +172,32 @@ select name,student_mark from student order by student_mark asc
 
 **Group By**
 
-group by specific column add aggregate function for the specific column in student table 
+Select specific column and use group by with aggregate function in student table 
+```bash
+select avg(student_mark) as average_mark,department from student group by department="EEE"
+```
+
+group by specific column add aggregate function in student table 
 ```bash
 select avg(student_mark) as average_mark,department from student group by department
 ```
 
+group by specific column add aggregate function with order by in student table 
+```bash
+select count(student_mark) as student_count, department from student group by department order by student_count desc
+```
+
+list all students in alphabetical order by name in student table 
+```bash
+select * from student order by name asc
+```
+
+list all students in the EEE department and sort them by mark in descending order in student table 
+```bash
+select * from student where student_mark<500 order by department desc
+```
+
+find the total number of students in each department in student table 
+```bash
+select count(*) as department_count, department from student group by department_count
+```
