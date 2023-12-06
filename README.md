@@ -30,7 +30,12 @@ alter table student add column degree varchar(100)
 
 To change the column name in existing table
 ```bash
-alter table student change department dept varchar(100)
+alter table student change dept department varchar(100)
+```
+
+To rename the column name in existing table
+```bash
+alter table student rename column department to dept
 ```
 
 To change the data type for column in existing table
