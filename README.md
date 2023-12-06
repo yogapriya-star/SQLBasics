@@ -237,3 +237,10 @@ select the name either William Turner or  ALice Brown in student table
 ```bash
 select * from student where name="William Turner" or name="ALice Brown"
 ```
+
+**IN Operator**
+
+select the name either William Turner or  ALice Brown in student table 
+```bash
+select * from student where name in ("William Turner","ALice Brown")
+```
