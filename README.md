@@ -230,3 +230,10 @@ select the department with the average mark using condition that average mark sh
 ```bash
 select avg(student_mark) as avg_student_mark, department from student group by department having avg_student_mark >500
 ```
+
+**OR Condition**
+
+select the name either William Turner or  ALice Brown in student table 
+```bash
+select * from student where name="William Turner" or name="ALice Brown"
+```
