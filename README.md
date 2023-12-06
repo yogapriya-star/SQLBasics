@@ -209,15 +209,19 @@ calculate the average mark for each department and sorted in ascending order by 
 select avg(student_mark) as avg_student_mark, department from student group by department order by department asc
 ```
 
-find the department with the highest average salary in student table 
+find the department with the highest average mark in student table 
 ```bash
 select avg(student_mark) as avg_student_mark, department from student group by department order by avg_student_mark desc limit 1
 ```
 
-find the department with the lowest average salary in student table 
+find the department with the lowest average mark in student table 
 ```bash
 select avg(student_mark) as avg_student_mark, department from student group by department order by avg_student_mark asc limit 1
 ```
 
 **Having Clause**
 
+select the department with the average mark using condition that average mark should be less than 500 in student table 
+```bash
+select avg(student_mark) as avg_student_mark, department from student group by department having avg_student_mark >500
+```
